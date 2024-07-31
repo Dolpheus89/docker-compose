@@ -17,4 +17,6 @@ services:
         command: npm run start
         volumes:
             - ./client/src/:/app/src/
+        environment:
+            - CHOKIDAR_USEPOLLING=true
     
